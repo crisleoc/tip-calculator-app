@@ -6,13 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splitter</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/desktop.css" media="(min-width:800px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <img src="./images/logo.svg" alt="" srcset="">
     </header>
+    <main>
+        <section class="inputs-section">
+            <div class="bill-container">
+                <span>Bill</span>
+                <label class="input-container">
+                    <img src="./images/icon-dollar.svg" alt="icon-dollar" title="icon-dollar">
+                    <input type="number" name="bill" id="bill-iput">
+                </label>
+            </div>
+            <div class="select-container">
+                <span>Select Tip %</span>
+                <div class="btn-container">
+                    <button type="submit">5%</button>
+                    <button type="submit">10%</button>
+                    <button type="submit">15%</button>
+                    <button type="submit">25%</button>
+                    <button type="submit">50%</button>
+                    <button id="btn-custom" type="submit">Custom</button>
+                </div>
+            </div>
+            <div class="number-container">
+                <span>Number of People</span>
+                <label class="input-container">
+                    <img src="./images/icon-person.svg" alt="icon-person" title="icon-person">
+                    <input type="number" name="user-number" id="user-number">
+                </label>
+            </div>
+        </section>
+        <section class="outputs-section"></section>
+    </main>
 </body>
 
 </html>
