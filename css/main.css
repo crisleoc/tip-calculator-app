@@ -6,6 +6,7 @@
     --grayish-cyan: hsl(184, 14%, 56%);
     --light-grayish-cyan: hsl(185, 41%, 84%);
     --white: hsl(0, 0%, 100%);
+    --red: #e99177;
 
     --font-size-input: 24px;
 
@@ -36,6 +37,22 @@ body {
     align-items: center;
     font-family: var(--font-family);
     background-color: var(--light-grayish-cyan);
+}
+
+@media (min-height: 850px) {
+    body {
+        height: 100vh;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 header {
@@ -114,9 +131,31 @@ main section {
     border-radius: 7px;
 }
 
-#btn-custom {
-    color:hsl(186, 14%, 43%);
+.inputs-section .select-container div button:hover,
+.inputs-section .select-container div button:active {
+    color: var(--very-dark-cyan);
+    background-color: #9de9df;
+}
+
+
+#input-custom {
+    width: calc(50% - 7px);
+    height: 5rem;
+    padding-right: 15px;
+    font-family: var(--font-family);
+    font-size: 2.5rem;
+    font-weight: var(--weight);
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    color: var(--very-dark-cyan);
+    text-align: right;
     background-color: var(--very-light-grayish-cyan);
+}
+
+#input-custom::placeholder {
+    text-align: right;
+    color: var(--dark-grayish-cyan)
 }
 
 .inputs-section .select-container div{
@@ -126,6 +165,14 @@ main section {
     flex-wrap: wrap;
     gap: 14px;
     margin: 5px 0;
+}
+
+.input-container:focus-within, #input-custom:focus {
+    border: 2px solid var(--strong-cyan);
+}
+
+.input-container:hover, #input-custom:hover, button {
+    cursor: pointer;
 }
 
 .outputs-section {
@@ -169,6 +216,28 @@ main section {
     color: var(--strong-cyan);
 }
 
+#text-container-error {
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#text-container-error span {
+    /* width: 40%; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#error-cero {
+    color: var(--red);
+    display: none;
+}
+
+#number-input--error {
+    border: 2px solid var(--red);
+}
+
 .reset-container {
     width: 100%;
     height: 50px;
@@ -187,4 +256,9 @@ main section {
     border: none;
     outline: none;
     border-radius: 7px;
+}
+
+.reset-container .btn-reset:hover,
+.reset-container .btn-reset:active {
+    background-color: #9fe8df;
 }
