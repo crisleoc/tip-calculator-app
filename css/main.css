@@ -6,7 +6,7 @@
     --grayish-cyan: hsl(184, 14%, 56%);
     --light-grayish-cyan: hsl(185, 41%, 84%);
     --white: hsl(0, 0%, 100%);
-    --red: #e99177;
+    --red: #ec7855;
 
     --font-size-input: 24px;
 
@@ -221,6 +221,8 @@ main section {
     flex-direction: row;
     justify-content: space-between;
 }
+
+/* Error */
 
 #text-container-error span {
     /* width: 40%; */
