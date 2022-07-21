@@ -67,7 +67,6 @@ function calculateTip() {
     TOTAL_OUTPUT.innerHTML = `\$${tipCalculator.getTotalPerson.toFixed(2)}`
 }
 
-BILL_INPUT.addEventListener('input', assignBill)
 for (let i = 0; i < TIP_BTNS.length; i++) {
     TIP_BTNS[i].addEventListener('click', () => {
         removeBtnColor()
@@ -76,6 +75,7 @@ for (let i = 0; i < TIP_BTNS.length; i++) {
         calculateTip()
     })
 }
+BILL_INPUT.addEventListener('input', assignBill)
 CUSTOM_INPUT.addEventListener('input', assignCustomTip)
 USER_NUMBER.addEventListener('input', userNumberVerification)
 RESET_BTN.addEventListener('click', resetCalculator)
