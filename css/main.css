@@ -225,7 +225,6 @@ main section {
 /* Error */
 
 #text-container-error span {
-    /* width: 40%; */
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -233,7 +232,7 @@ main section {
 
 #error-cero {
     color: var(--red);
-    display: none;
+    text-align: right;
 }
 
 #number-input--error {

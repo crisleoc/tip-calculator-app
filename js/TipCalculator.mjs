@@ -46,4 +46,12 @@ export default class TipCalculator {
         this.tipPerson = this.totalPerson * this.tipPercentage
         this.totalPerson = this.totalPerson + this.tipPerson
     }
+
+    reset() {
+        this.bill = 0
+        this.numberPeople = 0
+        this.tipPercentage = 0
+        this.totalPerson = 0
+        this.tipPerson = 0
+    }
 }

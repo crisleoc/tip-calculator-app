@@ -23,27 +23,26 @@
                 <span>Bill</span>
                 <label class="input-container">
                     <img src="./images/icon-dollar.svg" alt="icon-dollar" title="icon-dollar">
-                    <input type="number" name="bill" id="bill-iput">
+                    <input type="number" name="bill" id="bill-input">
                 </label>
             </div>
             <div class="select-container">
                 <span>Select Tip %</span>
                 <div class="btn-container">
-                    <button type="submit">5%</button>
-                    <button type="submit">10%</button>
-                    <button type="submit">15%</button>
-                    <button type="submit">25%</button>
-                    <button type="submit">50%</button>
+                    <button class="btn-tip" type="submit">5%</button>
+                    <button class="btn-tip" type="submit">10%</button>
+                    <button class="btn-tip" type="submit">15%</button>
+                    <button class="btn-tip" type="submit">25%</button>
+                    <button class="btn-tip" type="submit">50%</button>
                     <input type="number" placeholder="Custom" id="input-custom">
                 </div>
             </div>
             <div class="number-container">
                 <div id="text-container-error">
                     <span>Number of People</span>
-                    <span id="error-cero">Can't be cero</span>
+                    <span style="display:none" id="error-cero">Can't be zero</span>
                 </div>
-                <!-- <label class="input-container" id="number-input--error"> -->
-                <label class="input-container">
+                <label class="input-container number-input-container">
                     <img src="./images/icon-person.svg" alt="icon-person" title="icon-person">
                     <input type="number" name="user-number" id="user-number">
                 </label>
@@ -57,8 +56,8 @@
                         <span>Tip Amount</span>
                         <span>/ person</span>
                     </div>
-                    <span class="output-value">
-                        $4.27
+                    <span class="output-value" id="tip-span">
+                        $0.00
                     </span>
                 </div>
                 <div class="output">
@@ -66,13 +65,13 @@
                         <span>Total</span>
                         <span>/ person</span>
                     </div>
-                    <span class="output-value">
-                        $32.79
+                    <span class="output-value" id="total-span">
+                        $0.00
                     </span>
                 </div>
             </div>
             <div class="reset-container">
-                <button type="submit" class="btn-reset">
+                <button type="submit" class="btn-reset" id="reset-btn">
                     RESET
                 </button>
             </div>

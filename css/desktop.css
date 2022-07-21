@@ -4,7 +4,7 @@ body {
 
 main {
     max-width: 900px;
-    height: 55%;
+    height: 50%;
     display: flex;
     gap: 50px;
     border-radius: 30px;
@@ -19,4 +19,12 @@ main {
 
 .outputs-container .output {
     margin-top: 40px;
+}
+
+.inputs-section .select-container div button{
+    width: calc(33% - 9px);
+}
+
+#input-custom {
+    width: calc(33% - 9px);
 }
